@@ -1,0 +1,11 @@
+#!/bin/bash
+
+declare -ar env_kafkaeagle=(
+    "KAFKA_EAGLE_VERSION=${KAFKA_EAGLE_VERSION:?}"
+    'WORKDIR="${KE_HOME:?}"'
+)
+
+crf.removeFromRuntimeEnvironment 'WORKDIR'  
+crf.updateRuntimeEnvironment "${env_kafkaeagle[@]}" 
+
+

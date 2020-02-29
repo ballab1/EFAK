@@ -1,0 +1,10 @@
+#! /bin/bash
+
+mkdir -p /hadoop/kafka-eagle/db
+tar -xzf "${KAFKA_EAGLE['file']}"
+
+cd "${KAFKA_EAGLE['dir']}"
+mvn clean
+
+mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package -DskipTests 
+

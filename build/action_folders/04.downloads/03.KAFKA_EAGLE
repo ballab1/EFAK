@@ -1,0 +1,10 @@
+# kafka-eagle
+
+declare -A KAFKA_EAGLE=()
+KAFKA_EAGLE['version']=${KAFKA_EAGLE_VERSION:?}
+KAFKA_EAGLE['dir']="/tmp/kafka-eagle-${KAFKA_EAGLE['version']}"
+KAFKA_EAGLE['file']="/tmp/kafka-eagle-${KAFKA_EAGLE['version']}.tar.gz"
+KAFKA_EAGLE['url']="https://github.com/smartloli/kafka-eagle/archive/v${KAFKA_EAGLE['version']}.tar.gz"
+KAFKA_EAGLE['sha256_1.4.3']="3dddd201fd5c0bcc0b65759de3edd9c0108728842b4b58d027cd13bbe3f70e24"
+KAFKA_EAGLE['sha256']="${KAFKA_EAGLE['sha256_'${KAFKA_EAGLE['version']}]}"
+KAFKA_EAGLE['home']="${KE_HOME:-/opt/kafka-eagle}"

@@ -1,0 +1,4 @@
+# kafka-eagle build Packages
+
+declare -a PKGS=( gettext
+                  sqlite )
