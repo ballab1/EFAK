@@ -8,3 +8,13 @@ mvn clean
 
 mvn -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 package -DskipTests 
 
+
+mkdir -p "$KE_HOME"
+cd "$KE_HOME"
+tar xzvf "${KAFKA_EAGLE['dir']}/kafka-eagle-web/target/kafka-eagle-web-${KAFKA_EAGLE['version']}-bin.tar.gz" --strip-components 1
+
+
+rm -rf "${KE_HOME}/kms/logs"
+ln -s "${KE_HOME}/logs" "${KE_HOME}/kms/logs"
+
+mkdir -p /hadoop/kafka-eagle/db
