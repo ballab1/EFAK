@@ -8,5 +8,6 @@ KAFKA_EAGLE['url']="https://github.com/smartloli/kafka-eagle/archive/v${KAFKA_EA
 KAFKA_EAGLE['sha256_1.4.3']="3dddd201fd5c0bcc0b65759de3edd9c0108728842b4b58d027cd13bbe3f70e24"
 KAFKA_EAGLE['sha256_1.4.5']="99c2a446231edabd5fed0be0a3b0df2d3c5f7bea1566a6760a25ca80f23fd16b"
 KAFKA_EAGLE['sha256_1.4.6']="7c6151d5a541792a2b8af7f5fe0de6845b00237d87f070f8cfd1c5c06607318e"
+KAFKA_EAGLE['sha256_1.4.7']="cf5386b2d7c892dd0f20f2714cc15a460aeac2453c9ec2b5aca6b009b922f4b1"
 KAFKA_EAGLE['sha256']="${KAFKA_EAGLE['sha256_'${KAFKA_EAGLE['version']}]}"
 KAFKA_EAGLE['home']="${KE_HOME:-/opt/kafka-eagle}"
