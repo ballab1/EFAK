@@ -20,7 +20,7 @@ ARG KE_HOME=/opt/kafka-eagle
 
     
 # kafka-eagle version being bundled in this docker image
-ARG KAFKA_EAGLE_VERSION=2.0.2
+ARG KAFKA_EAGLE_VERSION=2.0.3
 LABEL version.kafka-eagle=$KAFKA_EAGLE_VERSION
 
 
