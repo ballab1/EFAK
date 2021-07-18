@@ -1,4 +1,11 @@
 # kafka-eagle build Packages
 
+declare -a BUILD=( maven
+                   git 
+                   tar
+                   unzip 
+                   wget )
+
 declare -a PKGS=( gettext
                   sqlite )
+
