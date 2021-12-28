@@ -1,7 +1,8 @@
 version: '3.3'
 
 # repo: https://github/ballab1/kafka-eagle.git
-
+# containerOS: alpine
+  
 services:
     kafkaeagle:
         build:
