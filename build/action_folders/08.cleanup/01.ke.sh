@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf /tmp/kafka*
+rm -rf /tmp/efak*
 rm -rf ~/.m2
