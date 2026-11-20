@@ -5,7 +5,7 @@ declare -ar env_kafkaeagle=(
     'WORKDIR="${KE_HOME:?}"'
 )
 
-crf.removeFromRuntimeEnvironment 'WORKDIR'  
-crf.updateRuntimeEnvironment "${env_kafkaeagle[@]}" 
+crf::removeFromRuntimeEnvironment 'WORKDIR'
+crf::updateRuntimeEnvironment "${env_kafkaeagle[@]}"
 
 
